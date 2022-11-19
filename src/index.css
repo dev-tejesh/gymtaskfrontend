@@ -38,20 +38,16 @@ header a {
   display: flex;
   /* flex-direction: column-reverse; */
   /* background-color: red; */
-  
-
-  
 }
 .workout-details {
   background: #fff;
   border-radius: 4px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-  
 }
-.workouts{
+.workouts {
   /* background-color: black; */
   width: 70%;
   margin-right: 20px;
@@ -107,34 +103,65 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
-.create{
+.create {
   background: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
   padding: 10px;
   height: 450px;
   width: 25%;
-
- 
+}
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+.title {
+  font-size: none;
+}
+@media screen and (max-width: 670px) {
+  .title {
+    font-size: 20px;
+  }
+}
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
 
-@media screen and  (max-width:1200px){
-  .create{
+@media screen and (max-width: 1200px) {
+  .create {
     width: 100%;
-    margin-right: 20px;
+   
     margin-bottom: 30px;
-    /* background-color: black; */
+   
   }
-  .workouts{
+  .workouts {
     width: 100%;
     /* background-color: blue; */
-  
   }
 }
-@media screen and (max-width:850px) and (max-width:1199px){
-  .home{
+@media screen and (max-width: 850px) and (max-width: 1199px) {
+  .home {
     flex-direction: column-reverse;
-    
+    margin-right: 15px;
   }
- 
-  
 }
