@@ -13,7 +13,7 @@ const WorkoutDetails = ({ workout }) => {
       return;
     }
     axios
-      .delete("http://localhost:5000/api/workouts/" + workout._id, {
+      .delete("https://gymtaskbackend-production.up.railway.app/api/workouts/" + workout._id, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },

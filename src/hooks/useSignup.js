@@ -10,14 +10,14 @@ export const useSignup = () => {
   const signup = async (email, password) => {
     setIsLoading(true);
     axios
-      .post("http://localhost:5000/api/user/signup", {
+      .post("https://gymtaskbackend-production.up.railway.app/api/user/signup", {
         email: email,
         password: password,
       })
       .then(async (response) => {
         if (response.status === 200) {
           localStorage.setItem("user", JSON.stringify(response.data));
-          const json = response.data;
+          // const json = response.data;
           await dispatch({ type: "LOGIN", payload: response.data });
           console.log("response successfful");
           setError(null);

@@ -11,7 +11,7 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setIsLoading(true);
     axios
-      .post("http://localhost:5000/api/user/login", {
+      .post("https://gymtaskbackend-production.up.railway.app/api/user/login", {
         email: email,
         password: password,
       })

@@ -19,7 +19,7 @@ const WorkoutForm = () => {
       return;
     }
     axios
-      .post("http://localhost:5000/api/workouts", {
+      .post("https://gymtaskbackend-production.up.railway.app/api/workouts", {
         title: title,
         load: load,
         reps: reps,

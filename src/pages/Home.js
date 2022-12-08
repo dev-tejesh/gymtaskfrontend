@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/workouts",
+        const response = await axios.get("https://gymtaskbackend-production.up.railway.app/api/workouts",
         {
           headers: {
             'Authorization': `Bearer ${user.token}`,
