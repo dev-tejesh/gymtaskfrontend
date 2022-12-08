@@ -18,7 +18,7 @@ export const useLogin = () => {
       .then(async (response) => {
         if (response.status === 200) {
           localStorage.setItem("user", JSON.stringify(response.data));
-          const json = response.data;
+          // const json = response.data;
           await dispatch({ type: "LOGIN", payload: response.data });
           console.log("response successfful");
           setError(null);
